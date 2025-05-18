@@ -1,0 +1,26 @@
+[ft.py]
+num_workers = 0
+gpu = 0
+old_batch_size=256
+new_batch_size=32
+val_batch_size=2
+num_epochs = 35
+lr_decay=0.1
+lr=0.01
+momentum=0.9
+weight_decay=0.0001
+patience = 5
+##############################
+algo_name = ift_vgg_faces_s10_5k
+normalization_dataset_name = vgg_faces
+datasets_mean_std_file_path = D:/FR_codes/data/datasets_mean_std.txt
+K = 5000
+train_files_dir = D:/FR_codes/data/images_list_files/vgg_faces/S~10/unbalanced/train/
+dataset_files_dir = D:/FR_codes/data/images_list_files/vgg_faces/S~10
+first_model_load_path = D:/FR_codes/scail/model_s/vgg_faces_s10_batch1.pt
+##############################
+saving_intermediate_models = False
+models_save_dir = D:/FR_codes/data/images_list_files/vgg_faces/S~10/unbalanced/train/model_ft
+#########################
+first_batch_number = 2
+last_batch_number = 10
