@@ -34,22 +34,6 @@ This repository implements a **Deep Face Recognition system with Incremental Lea
 - **Data Augmentation**: Comprehensive augmentation for limited training data
 - **Cross-domain Evaluation**: Performance across different datasets
 
-## 🏗️ System Architecture
-
-```
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│   Face          │    │   Feature       │    │   Incremental   │
-│   Detection     │───►│   Extraction    │───►│   Classifier    │
-│   (MTCNN/RetinaFace)│    │   (ResNet/FaceNet) │    │   (ArcFace/CosFace) │
-└─────────────────┘    └─────────────────┘    └─────────────────┘
-         │                       │                       │
-         ▼                       ▼                       ▼
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│   Preprocessing │    │   Memory        │    │   Identity      │
-│   Pipeline      │    │   Management    │    │   Recognition   │
-└─────────────────┘    └─────────────────┘    └─────────────────┘
-```
-
 ## 📊 Datasets & Benchmarks
 
 ### Primary Datasets
@@ -382,15 +366,8 @@ pre-commit install
 - Include unit tests for new features
 - Maintain backward compatibility
 
-### Pull Request Process
-1. Create feature branch from main
-2. Implement changes with tests
-3. Update documentation
-4. Submit PR with detailed description
-
 ## 📚 Citations & References
 
-### Primary Citation
 ```bibtex
 @misc{moslem2024face_recognition,
   title={Deep Face Recognition in Incremental Learning Scenarios},
